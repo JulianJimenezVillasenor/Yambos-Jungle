@@ -1,0 +1,197 @@
+:root {
+            --primary: #4A2C2A;
+            --secondary: #D4A76A;
+            --accent: #8B4513;
+            --light: #F5E6D3;
+            --dark: #2C1810;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #F9F5EB 0%, #E4DCCF 100%);
+            color: var(--dark);
+            scroll-behavior: smooth;
+        }
+
+        .title-font {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(74, 44, 42, 0.9) 0%, rgba(139, 69, 19, 0.8) 100%);
+        }
+
+        .coffee-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .coffee-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .floating-animation {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .gradient-text {
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .bg-pattern {
+            background-image: radial-gradient(circle at 1px 1px, rgba(139, 69, 19, 0.1) 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+
+        /* Logo Styles */
+        .logo {
+            width: 56px;
+            height: 56px;
+            background: transparent;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+        }
+
+        .logo-text {
+            color: #D4A76A;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 100;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-button {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.6);
+        }
+
+        .whatsapp-button i {
+            font-size: 28px;
+        }
+
+        .whatsapp-tooltip {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: white;
+            padding: 12px 18px;
+            border-radius: 25px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .whatsapp-button:hover .whatsapp-tooltip {
+            opacity: 1;
+            visibility: visible;
+            right: 75px;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+            }
+            .whatsapp-button { width: 55px; height: 55px; }
+            .whatsapp-button i { font-size: 24px; }
+            .whatsapp-tooltip { display: none; }
+        }
+
+        /* Custom small helpers */
+        /* make iframe responsive */
+        .iframe-wrapper {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+        .iframe-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* ensure nav doesn't overlap content */
+        :root {
+            --nav-height: 72px;
+        }
+        @media (min-width: 768px) {
+            :root { --nav-height: 88px; }
+        }
+
+        main { margin-top: var(--nav-height); }
+
+        /* mobile menu animation */
+        .mobile-menu-enter {
+            animation: mobileMenuIn 220ms ease-out forwards;
+        }
+        .mobile-menu-exit {
+            animation: mobileMenuOut 180ms ease-in forwards;
+        }
+        @keyframes mobileMenuIn {
+            from { opacity: 0; transform: translateY(-8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes mobileMenuOut {
+            from { opacity: 1; transform: translateY(0); }
+            to { opacity: 0; transform: translateY(-8px); }
+        }
