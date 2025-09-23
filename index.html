@@ -15,354 +15,298 @@
 
 </head>
 <body class="min-h-screen">
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-sm z-50 shadow-md" role="navigation" aria-label="Principal">
-        <div class="container mx-auto px-6 py-4">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <div class="logo">
-                        <img src="Logo.png" alt="Logo Cafe Yambos Jungle" class="w-14 h-14 object-contain">
-                    </div>
-                    <span class="title-font text-2xl font-bold gradient-text">YAMBO'S JUNGLE</span>
-                </div>
 
-                <!-- Desktop links -->
-                <div class="hidden md:flex space-x-8 items-center">
-                    <a href="#inicio" class="hover:text-[#8B4513] transition-colors">Inicio</a>
-                    <a href="#origen" class="hover:text-[#8B4513] transition-colors">Origen</a>
-                    <a href="#variedades" class="hover:text-[#8B4513] transition-colors">Variedades</a>
-                    <a href="#contacto" class="hover:text-[#8B4513] transition-colors">Contacto</a>
-                </div>
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 w-full bg-white/90 z-50 shadow-md" role="navigation" aria-label="Principal">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <img src="Imagenes/Logo.png" alt="Logo Cafe Yambos Jungle" class="w-14 h-14 object-contain">
+        <span class="title-font text-2xl font-bold gradient-text">YAMBO'S JUNGLE</span>
+      </div>
 
-                <!-- Mobile: menu -->
-                <div class="md:hidden flex items-center">
-                    <button id="menu-btn" class="text-[#4A2C2A] p-2 rounded-md" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
+      <div class="hidden md:flex space-x-8 items-center">
+        <a href="#inicio" class="hover:text-[#8B4513] transition-colors">Inicio</a>
+        <a href="#origen" class="hover:text-[#8B4513] transition-colors">Origen</a>
+        <a href="#variedades" class="hover:text-[#8B4513] transition-colors">Variedades</a>
+        <a href="#contacto" class="hover:text-[#8B4513] transition-colors">Contacto</a>
+      </div>
 
-        <!-- Mobile menu (hidden by default) -->
-        <div id="mobile-menu" class="md:hidden hidden border-t border-gray-200">
-            <div class="px-6 pb-6 pt-4 space-y-3">
-                <a href="#inicio" class="block py-2 px-3 rounded hover:bg-gray-100">Inicio</a>
-                <a href="#origen" class="block py-2 px-3 rounded hover:bg-gray-100">Origen</a>
-                <a href="#variedades" class="block py-2 px-3 rounded hover:bg-gray-100">Variedades</a>
-                <a href="#contacto" class="block py-2 px-3 rounded hover:bg-gray-100">Contacto</a>
-            </div>
-        </div>
-    </nav>
-
-    <!-- WhatsApp Floating Button -->
-    <div class="whatsapp-float">
-        <a 
-            href="https://wa.me/523112283199?text=¡Hola! Estoy interesado en el café YAMBOS JUNGLE. ¿Me podrían dar más información?"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="whatsapp-button"
-            aria-label="Contactar por WhatsApp"
-        >
-            <i class="fab fa-whatsapp"></i>
-            <span class="whatsapp-tooltip">¡Contáctanos por WhatsApp!</span>
-        </a>
+      <div class="md:hidden flex items-center">
+        <button id="menu-btn" class="text-[#4A2C2A] p-2 rounded-md" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
     </div>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="inicio" class="relative min-h-[70vh] md:h-screen flex items-center justify-center overflow-hidden">
-            <div class="absolute inset-0">
-                <img src="Cafe.png" alt="Plantaciones de café YAMBOS JUNGLE en las montañas verdes de Tecuitata, Nayarit con granos de café maduros" class="w-full h-full object-cover" />
-                <div class="absolute inset-0 hero-gradient"></div>
-            </div>
-            
-            <div class="relative z-10 text-center text-white px-6 max-w-4xl mx-auto fade-in">
-                <h1 class="title-font text-4xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6">
-                    YAMBO'S <span class="text-[#D4A76A]">JUNGLE</span>
-                </h1>
-                <p class="text-lg sm:text-xl md:text-2xl mb-6 leading-relaxed">
-                    Café artesanal cosechado en las alturas de Tecuitata, Nayarit. 
-                    Sabor auténtico en cada taza.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#variedades" class="bg-[#D4A76A] hover:bg-[#C19358] text-[#4A2C2A] px-6 sm:px-8 py-3 rounded-full font-semibold transition-colors transform hover:scale-105">
-                        Descubrir Variedades
-                    </a>
-                    <a href="#origen" class="border-2 border-white hover:bg-white hover:text-[#4A2C2A] px-6 sm:px-8 py-3 rounded-full font-semibold transition-all">
-                        Conoce Nuestra Historia
-                    </a>
-                </div>
-            </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-gray-200">
+      <div class="px-6 pb-6 pt-4 space-y-3">
+        <a href="#inicio" class="block py-2 px-3 rounded hover:bg-gray-100">Inicio</a>
+        <a href="#origen" class="block py-2 px-3 rounded hover:bg-gray-100">Origen</a>
+        <a href="#variedades" class="block py-2 px-3 rounded hover:bg-gray-100">Variedades</a>
+        <a href="#contacto" class="block py-2 px-3 rounded hover:bg-gray-100">Contacto</a>
+      </div>
+    </div>
+  </nav>
 
-            <a href="#origen" class="absolute bottom-10 left-1/2 transform -translate-x-1/2 floating-animation inline-flex items-center justify-center p-3 rounded-full focus:outline-none focus:ring-2 focus:ring-[#D4A76A]" aria-label="Ir a la sección Origen">
-                <i class="fas fa-chevron-down text-white text-2xl"></i>
-            </a>
-        </section>
+  <!-- WhatsApp Floating Button (diseño original) -->
+  <div class="whatsapp-float">
+    <a 
+      href="https://wa.me/523112283199?text=¡Hola! Estoy interesado en el café YAMBOS JUNGLE. ¿Me podrían dar más información?"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="whatsapp-button"
+      aria-label="Contactar por WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span class="whatsapp-tooltip">¡Contáctanos por WhatsApp!</span>
+    </a>
+  </div>
 
-        <!-- Seccion Inicio -->
-        <section id="origen" class="py-16 md:py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div class="relative">
-                        <div class="floating-animation">
-                            <img src="Cosechar.png" alt="Granjeros locales cosechando granos de café a mano en las montañas de Tecuitata con técnicas tradicionales" class="rounded-lg shadow-xl w-full object-cover" />
-                        </div>
-                        <div class="absolute -top-4 -right-4 bg-[#D4A76A] text-[#4A2C2A] px-4 py-2 rounded-lg shadow-lg">
-                            <span class="title-font font-bold">100% Orgánico</span>
-                        </div>
-                    </div>
-                    
-                    <div>
-                        <h2 class="title-font text-3xl sm:text-4xl font-bold mb-6 gradient-text">
-                            Origen en Tecuitata, Nayarit
-                        </h2>
-                        <p class="text-base sm:text-lg mb-6 leading-relaxed">
-                            Yambo's  jungle café natural es sinónimo de buen café. Cultivado bajo sombra en un microclima que permite obtener jugosos frutos de las variedades Tipica arábica y Mondo novo.
-                        </p>
-                        <p class="text-base sm:text-lg mb-6 leading-relaxed">
-                            Procesado de la forma tradicional, es decir cerezas 100% maduras secas al sol. Seleccionado a mano para obtener la mejor calidad. 
-                        </p>
-                        <p class="text-base sm:text-lg mb-8 leading-relaxed">
-                            Aplicando un cuidadoso tueste para resaltar al máximo su cuerpo,sabor y aroma.
-                            Presentación de medio kilo, en grano o molido en bolsas metalizadas con válvula desgasificadora.
-                        </p>
-                        <div class="grid grid-cols-3 gap-4">
-                            <div class="text-center">
-                                <div class="text-2xl sm:text-3xl font-bold text-[#8B4513]">400-650m.</div>
-                                <div class="text-sm">Altitud</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-2xl sm:text-3xl font-bold text-[#8B4513]">100%</div>
-                                <div class="text-sm">Arábica</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="text-2xl sm:text-3xl font-bold text-[#8B4513]">Solar</div>
-                                <div class="text-sm">Secado</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <main class="pt-20">
 
-        <!-- Variantes -->
-        <section id="variedades" class="py-16 md:py-20 bg-pattern">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="title-font text-3xl sm:text-4xl font-bold mb-4 gradient-text">
-                        Nuestras Variedades
-                    </h2>
-                    <p class="text-base sm:text-xl text-gray-600 max-w-2xl mx-auto">
-                        Descubre la diversidad de sabores que nuestras montañas tienen para ofrecer
-                    </p>
-                </div>
-
-                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12">
-                    <!-- Claro -->
-                    <div class="coffee-card bg-white rounded-xl p-6 sm:p-8 text-center shadow-lg">
-                        <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#F5E6D3] to-[#D4A76A] flex items-center justify-center">
-                            <i class="fas fa-mug-hot text-2xl sm:text-3xl text-[#4A2C2A]"></i>
-                        </div>
-                        <h3 class="title-font text-xl sm:text-2xl font-bold mb-3 text-[#4A2C2A]">Claro</h3>
-                        <p class="text-gray-600 mb-4 text-sm sm:text-base">
-                            Un tostado ligero y delicado donde el carácter del café está presente sin abrumar. Perfecto
-                            para quienes disfrutan una taza fresca y suave, con matices sutiles que invitan a repetir.
-                        </p>
-                        <div class="space-y-2 mb-2 text-sm sm:text-base">
-                            <div class="flex justify-between">
-                                <span>Acidez:</span><span class="font-semibold">Alta</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span>Cuerpo:</span><span class="font-semibold">Ligero</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span>Notas:</span><span class="font-semibold">Cítricos, floral</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Mixto -->
-                    <div class="coffee-card bg-white rounded-xl p-6 sm:p-8 text-center shadow-lg transform scale-100 sm:scale-105">
-                        <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#D4A76A] to-[#8B4513] flex items-center justify-center">
-                            <i class="fas fa-mug-hot text-2xl sm:text-3xl text-white"></i>
-                        </div>
-                        <h3 class="title-font text-xl sm:text-2xl font-bold mb-3 text-[#4A2C2A]">Mixto</h3>
-                        <p class="text-gray-600 mb-4 text-sm sm:text-base">
-                            El equilibrio perfecto entre suavidad e intensidad: combina los matices florales y afrutados de un 
-                            tostado claro con la calidez y cuerpo del tostado oscuro.
-                        </p>
-                        <div class="space-y-2 mb-2 text-sm sm:text-base">
-                            <div class="flex justify-between">
-                                <span>Acidez:</span><span class="font-semibold">Media</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span>Cuerpo:</span><span class="font-semibold">Medio</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span>Notas:</span><span class="font-semibold">Chocolate, nueces</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Oscuro -->
-                    <div class="coffee-card bg-white rounded-xl p-6 sm:p-8 text-center shadow-lg">
-                        <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#8B4513] to-[#4A2C2A] flex items-center justify-center">
-                            <i class="fas fa-mug-hot text-2xl sm:text-3xl text-white"></i>
-                        </div>
-                        <h3 class="title-font text-xl sm:text-2xl font-bold mb-3 text-[#4A2C2A]">Oscuro</h3>
-                        <p class="text-gray-600 mb-4 text-sm sm:text-base">
-                            Intenso y reconfortante, pensado para los amantes del sabor puro del café. Cada sorbo entrega notas
-                            profundas y persistentes, ideal para empezar el día con fuerza.
-                        </p>
-                        <div class="space-y-2 mb-2 text-sm sm:text-base">
-                            <div class="flex justify-between">
-                                <span>Acidez:</span><span class="font-semibold">Baja</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span>Cuerpo:</span><span class="font-semibold">Completo</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span>Notas:</span><span class="font-semibold">Chocolate, caramelo</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Precios -->
-                <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8">
-                    <h3 class="title-font text-2xl font-bold mb-6 text-center text-[#4A2C2A]">
-                        Presentaciones Disponibles
-                    </h3>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="text-center p-6 border-2 border-[#D4A76A] rounded-lg">
-                            <div class="w-16 h-16 mx-auto mb-4 bg-[#F5E6D3] rounded-full flex items-center justify-center">
-                                <i class="fas fa-weight-hanging text-2xl text-[#8B4513]"></i>
-                            </div>
-                            <h4 class="font-bold text-xl mb-2">100g</h4>
-                            <p class="text-gray-600 mb-4">Perfecto para degustación</p>
-                            <div class="text-2xl font-bold text-[#8B4513] mb-4">$70 MXN</div>
-                        </div>
-                        
-                        <div class="text-center p-6 border-2 border-[#8B4513] rounded-lg bg-gradient-to-br from-[#F9F5EB] to-[#F5E6D3]">
-                            <div class="w-16 h-16 mx-auto mb-4 bg-[#D4A76A] rounded-full flex items-center justify-center">
-                                <i class="fas fa-weight-hanging text-2xl text-white"></i>
-                            </div>
-                            <h4 class="font-bold text-xl mb-2">500g</h4>
-                            <p class="text-gray-600 mb-4">Ideal para cafeterías y hogares</p>
-                            <div class="text-2xl font-bold text-[#8B4513] mb-4">$180 MXN</div>
-                            <!--<div class="text-sm text-green-600 mb-4">¡Ahorra $80 MXN!</div>-->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contacto" class="py-16 md:py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-10">
-                    <h2 class="title-font text-3xl sm:text-4xl font-bold mb-4 gradient-text">
-                        ¿Listo para Probar YAMBO'S JUNGLE?
-                    </h2>
-                    <p class="text-base sm:text-xl text-gray-600">
-                        Contáctanos para pedidos al mayoreo o más información
-                    </p>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <div class="bg-gradient-to-br from-[#4A2C2A] to-[#8B4513] text-white p-6 sm:p-8 rounded-xl">
-                            <h3 class="title-font text-2xl font-bold mb-4">Información de Contacto</h3>
-                            <div class="space-y-4">
-                                <!-- Dirección: abre Google Maps en nueva pestaña -->
-                                <div class="flex items-center">
-                                    <i class="fas fa-map-marker-alt text-[#D4A76A] text-xl mr-4"></i>
-                                    <a
-                                        class="contact-link"
-                                        href="https://maps.app.goo.gl/js7G3kaazvQoX8wo6"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        aria-label="Abrir dirección en Google Maps: Tecuitata, Nayarit, México"
-                                        id="contact-address"
-                                        >Yambos Jungle Café Natural, Tecuitata, Nayarit, México</a>
-                                </div>
-
-                                <!-- Teléfono: enlace tel: -->
-                                <div class="flex items-center">
-                                    <i class="fas fa-phone text-[#D4A76A] text-xl mr-4"></i>
-                                    <a
-                                        class="contact-link"
-                                        href="tel:+523112283199"
-                                        aria-label="Llamar al +52 311 228 31 99"
-                                        id="contact-phone"
-                                    >+52 311 228 31 99</a>
-                                </div>
-
-                                <!-- Email: enlace mailto: -->
-                                <div class="flex items-center">
-                                    <i class="fas fa-envelope text-[#D4A76A] text-xl mr-4"></i>
-                                    <a
-                                        class="contact-link"
-                                        href="mailto:yambosJungle@gmail.com"
-                                        aria-label="Enviar correo a yambosJungle@gmail.com"
-                                        id="contact-email"
-                                    >yambosJungle@gmail.com</a>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-gray-50 p-6 sm:p-8 rounded-xl">
-                        <div class="iframe-wrapper">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.4859276527113!2d-105.14511692106322!3d21.449442017146062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8420c9a241428a0f%3A0x9982fe1e3d3cba3e!2sYAMBO&#39;S%20JUNGLE%20caf%C3%A9%20natural!5e0!3m2!1ses-419!2smx!4v1757226627985!5m2!1ses-419!2smx" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Mapa de Yambo's Jungle"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-[#2C1810] text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="title-font text-2xl font-bold mb-4">YAMBO'S JUNGLE</h3>
-                    <p class="text-gray-400">
-                        Café artesanal de las montañas de Tecuitata, Nayarit. 
-                        Sabor auténtico en cada grano.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Enlaces Rápidos</h4>
-                    <ul class="space-y-2">
-                        <li><a href="#inicio" class="text-gray-400 hover:text-[#D4A76A] transition-colors">Inicio</a></li>
-                        <li><a href="#origen" class="text-gray-400 hover:text-[#D4A76A] transition-colors">Origen</a></li>
-                        <li><a href="#variedades" class="text-gray-400 hover:text-[#D4A76A] transition-colors">Variedades</a></li>
-                        <li><a href="#contacto" class="text-gray-400 hover:text-[#D4A76A] transition-colors">Contacto</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-semibold mb-4">Síguenos</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-[#4A2C2A] rounded-full flex items-center justify-center hover:bg-[#D4A76A] transition-colors" aria-label="Facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-[#4A2C2A] rounded-full flex items-center justify-center hover:bg-[#D4A76A] transition-colors" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-[#4A2C2A] rounded-full flex items-center justify-center hover:bg-[#D4A76A] transition-colors" aria-label="WhatsApp">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>© 2025 YAMBO'S JUNGLE. Todos los derechos reservados.</p>
-            </div>
+    <section id="inicio" class="relative">
+      <div class="carousel-viewport" id="carousel" tabindex="0" role="region" aria-roledescription="carrusel" aria-label="Galería principal">
+        <div class="slides" data-count="3" style="transform: translateX(0%);">
+          <figure class="slide" data-index="0" aria-hidden="false">
+            <img src="Imagenes/Imagen cafe 2.jpg" alt="Plantaciones de café al amanecer en Tecuitata" loading="lazy">
+          </figure>
+          <figure class="slide" data-index="1" aria-hidden="true">
+            <img src="Imagenes/Imagen cafe 4.jpg" alt="Productores cosechando granos de café a mano" loading="lazy">
+          </figure>
+          <figure class="slide" data-index="2" aria-hidden="true">
+            <img src="Imagenes/Imagen cafe 6.jpg" alt="Taza de café humeante y granos tostados" loading="lazy">
+          </figure>
         </div>
-    </footer>
+        <div class="carousel-overlay"></div>
+      </div>
+
+      <div class="relative z-20 max-w-4xl mx-auto text-center text-white px-6 py-16 fade-in">
+        <h1 class="title-font text-4xl md:text-6xl font-bold mb-4">YAMBO'S <span style="color:var(--bright)">JUNGLE</span></h1>
+        <p class="text-lg md:text-xl mb-6">Café artesanal cosechado en las alturas de Tecuitata, Nayarit. Sabor auténtico en cada taza.</p>
+        <div class="flex gap-4 justify-center">
+          <a href="#variedades" class="bg-[#D4A76A] hover:bg-[#C19358] text-[#4A2C2A] px-6 sm:px-8 py-3 rounded-full font-semibold transition-colors transform hover:scale-105">Descubrir Variedades</a>
+          <a href="#origen" class="border-2 border-white hover:bg-white hover:text-[#4A2C2A] px-6 sm:px-8 py-3 rounded-full font-semibold transition-all">Conoce Nuestra Historia</a>
+        </div>
+      </div>
+
+      <button class="carousel-control prev" id="prevBtn" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+      <button class="carousel-control next" id="nextBtn" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+
+      <div class="controls-bottom" aria-hidden="false">
+        <div class="dots" role="tablist" aria-label="Seleccionar imagen">
+          <button data-to="0" aria-label="Ir a la imagen 1" aria-current="true"></button>
+          <button data-to="1" aria-label="Ir a la imagen 2" aria-current="false"></button>
+          <button data-to="2" aria-label="Ir a la imagen 3" aria-current="false"></button>
+        </div>
+        <div class="thumbnails" role="tablist" aria-label="Miniaturas">
+          <button class="thumb-btn" data-to="0" aria-label="Miniatura 1" aria-current="true">
+            <img src="Imagenes/Imagen cafe 2.jpg" alt="Miniatura 1" loading="lazy">
+          </button>
+          <button class="thumb-btn" data-to="1" aria-label="Miniatura 2" aria-current="false">
+            <img src="Imagenes/Imagen cafe 4.jpg" alt="Miniatura 2" loading="lazy">
+          </button>
+          <button class="thumb-btn" data-to="2" aria-label="Miniatura 3" aria-current="false">
+            <img src="Imagenes/Imagen cafe 6.jpg" alt="Miniatura 3" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="origen" class="py-16 md:py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="relative">
+            <div class="floating-animation">
+              <img src="Imagenes/Imagen cafe 1.jpg" alt="Granjeros locales cosechando granos" class="rounded-lg shadow-xl w-full object-cover">
+            </div>
+            <div class="absolute -top-4 -right-4 bg-[#D4A76A] text-[#4A2C2A] px-4 py-2 rounded-lg shadow-lg">
+              <span class="title-font font-bold">100% Orgánico</span>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="title-font text-3xl sm:text-4xl font-bold mb-6 gradient-text">Origen en Tecuitata, Nayarit</h2>
+            <p class="text-base sm:text-lg mb-6 leading-relaxed">
+              Yambo's jungle café natural es sinónimo de buen café. Cultivado bajo sombra en un microclima que permite obtener jugosos frutos de las variedades Típica arábica y Mundo Novo.
+            </p>
+            <p class="text-base sm:text-lg mb-6 leading-relaxed">
+              Procesado de la forma tradicional: cerezas 100% maduras secas al sol. Seleccionado a mano para obtener la mejor calidad.
+            </p>
+            <p class="text-base sm:text-lg mb-8 leading-relaxed">
+              Aplicando un cuidadoso tueste para resaltar al máximo su cuerpo, sabor y aroma. Presentación de medio kilo, en grano o molido en bolsas metalizadas con válvula desgasificadora.
+            </p>
+            <div class="grid grid-cols-3 gap-4">
+              <div class="text-center">
+                <div class="text-2xl sm:text-3xl font-bold text-[#8B4513]">400-650m.</div>
+                <div class="text-sm">Altitud</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl sm:text-3xl font-bold text-[#8B4513]">100%</div>
+                <div class="text-sm">Arábica</div>
+              </div>
+              <div class="text-center">
+                <div class="text-2xl sm:text-3xl font-bold text-[#8B4513]">Solar</div>
+                <div class="text-sm">Secado</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="variedades" class="py-16 md:py-20 bg-pattern">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="title-font text-3xl sm:text-4xl font-bold mb-4 gradient-text">Nuestras Variedades</h2>
+          <p class="text-base sm:text-xl text-gray-600 max-w-2xl mx-auto">Descubre la diversidad de sabores que nuestras montañas tienen para ofrecer</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mb-12">
+          <div class="coffee-card bg-white rounded-xl p-6 sm:p-8 text-center shadow-lg">
+            <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#F5E6D3] to-[#D4A76A] flex items-center justify-center">
+              <i class="fas fa-mug-hot text-2xl sm:text-3xl text-[#4A2C2A]"></i>
+            </div>
+            <h3 class="title-font text-xl sm:text-2xl font-bold mb-3 text-[#4A2C2A]">Claro</h3>
+            <p class="text-gray-600 mb-4 text-sm sm:text-base">Un tostado ligero y delicado donde el carácter del café está presente sin abrumar.</p>
+            <div class="space-y-2 mb-2 text-sm sm:text-base">
+              <div class="flex justify-between"><span>Acidez:</span><span class="font-semibold">Alta</span></div>
+              <div class="flex justify-between"><span>Cuerpo:</span><span class="font-semibold">Ligero</span></div>
+              <div class="flex justify-between"><span>Notas:</span><span class="font-semibold">Cítricos, floral</span></div>
+            </div>
+          </div>
+
+          <div class="coffee-card bg-white rounded-xl p-6 sm:p-8 text-center shadow-lg transform scale-100 sm:scale-105">
+            <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#D4A76A] to-[#8B4513] flex items-center justify-center">
+              <i class="fas fa-mug-hot text-2xl sm:text-3xl text-white"></i>
+            </div>
+            <h3 class="title-font text-xl sm:text-2xl font-bold mb-3 text-[#4A2C2A]">Mixto</h3>
+            <p class="text-gray-600 mb-4 text-sm sm:text-base">El equilibrio perfecto entre suavidad e intensidad.</p>
+            <div class="space-y-2 mb-2 text-sm sm:text-base">
+              <div class="flex justify-between"><span>Acidez:</span><span class="font-semibold">Media</span></div>
+              <div class="flex justify-between"><span>Cuerpo:</span><span class="font-semibold">Medio</span></div>
+              <div class="flex justify-between"><span>Notas:</span><span class="font-semibold">Chocolate, nueces</span></div>
+            </div>
+          </div>
+
+          <div class="coffee-card bg-white rounded-xl p-6 sm:p-8 text-center shadow-lg">
+            <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br from-[#8B4513] to-[#4A2C2A] flex items-center justify-center">
+              <i class="fas fa-mug-hot text-2xl sm:text-3xl text-white"></i>
+            </div>
+            <h3 class="title-font text-xl sm:text-2xl font-bold mb-3 text-[#4A2C2A]">Oscuro</h3>
+            <p class="text-gray-600 mb-4 text-sm sm:text-base">Intenso y reconfortante, pensado para los amantes del sabor puro del café.</p>
+            <div class="space-y-2 mb-2 text-sm sm:text-base">
+              <div class="flex justify-between"><span>Acidez:</span><span class="font-semibold">Baja</span></div>
+              <div class="flex justify-between"><span>Cuerpo:</span><span class="font-semibold">Completo</span></div>
+              <div class="flex justify-between"><span>Notas:</span><span class="font-semibold">Chocolate, caramelo</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8">
+          <h3 class="title-font text-2xl font-bold mb-6 text-center text-[#4A2C2A]">Presentaciones Disponibles</h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="text-center p-6 border-2 border-[#D4A76A] rounded-lg">
+              <div class="w-16 h-16 mx-auto mb-4 bg-[#F5E6D3] rounded-full flex items-center justify-center">
+                <i class="fas fa-weight-hanging text-2xl text-[#8B4513]"></i>
+              </div>
+              <h4 class="font-bold text-xl mb-2">100g</h4>
+              <p class="text-gray-600 mb-4">Perfecto para degustación</p>
+              <div class="text-2xl font-bold text-[#8B4513] mb-4">$70 MXN</div>
+            </div>
+
+            <div class="text-center p-6 border-2 border-[#8B4513] rounded-lg bg-gradient-to-br from-[#F9F5EB] to-[#F5E6D3]">
+              <div class="w-16 h-16 mx-auto mb-4 bg-[#D4A76A] rounded-full flex items-center justify-center">
+                <i class="fas fa-weight-hanging text-2xl text-white"></i>
+              </div>
+              <h4 class="font-bold text-xl mb-2">500g</h4>
+              <p class="text-gray-600 mb-4">Ideal para cafeterías y hogares</p>
+              <div class="text-2xl font-bold text-[#8B4513] mb-4">$180 MXN</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-16 md:py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-10">
+          <h2 class="title-font text-3xl sm:text-4xl font-bold mb-4 gradient-text">¿Listo para Probar YAMBO'S JUNGLE?</h2>
+          <p class="text-base sm:text-xl text-gray-600">Contáctanos para pedidos al mayoreo o más información</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <div class="bg-gradient-to-br from-[#4A2C2A] to-[#8B4513] text-white p-6 sm:p-8 rounded-xl">
+              <h3 class="title-font text-2xl font-bold mb-4">Información de Contacto</h3>
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <i class="fas fa-map-marker-alt text-[#D4A76A] text-xl mr-4"></i>
+                  <a class="contact-link" href="https://maps.app.goo.gl/js7G3kaazvQoX8wo6" target="_blank" rel="noopener noreferrer">Yambos Jungle Café Natural, Tecuitata, Nayarit, México</a>
+                </div>
+
+                <div class="flex items-center">
+                  <i class="fas fa-phone text-[#D4A76A] text-xl mr-4"></i>
+                  <a class="contact-link" href="tel:+523112283199">+52 311 228 31 99</a>
+                </div>
+
+                <div class="flex items-center">
+                  <i class="fas fa-envelope text-[#D4A76A] text-xl mr-4"></i>
+                  <a class="contact-link" href="mailto:yambosJungle@gmail.com">yambosJungle@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-6 sm:p-8 rounded-xl">
+            <div class="iframe-wrapper">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.4859276527113!2d-105.14511692106322!3d21.449442017146062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8420c9a241428a0f%3A0x9982fe1e3d3cba3e!2sYAMBO%27S%20JUNGLE%20caf%C3%A9%20natural!5e0!3m2!1ses-419!2smx!4v1757226627985!5m2!1ses-419!2smx" loading="lazy" referrerpolicy="no-referrer-when-downgrade" aria-label="Mapa de Yambo's Jungle"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#2C1810] text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="title-font text-2xl font-bold mb-4">YAMBO'S JUNGLE</h3>
+          <p class="text-gray-400">Café artesanal de las montañas de Tecuitata, Nayarit. Sabor auténtico en cada grano.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Enlaces Rápidos</h4>
+          <ul class="space-y-2">
+            <li><a href="#inicio" class="text-gray-400 hover:text-[#D4A76A] transition-colors">Inicio</a></li>
+            <li><a href="#origen" class="text-gray-400 hover:text-[#D4A76A] transition-colors">Origen</a></li>
+            <li><a href="#variedades" class="text-gray-400 hover:text-[#D4A76A] transition-colors">Variedades</a></li>
+            <li><a href="#contacto" class="text-gray-400 hover:text-[#D4A76A] transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-4">Síguenos</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="w-10 h-10 bg-[#4A2C2A] rounded-full flex items-center justify-center hover:bg-[#D4A76A] transition-colors" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-[#4A2C2A] rounded-full flex items-center justify-center hover:bg-[#D4A76A] transition-colors" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="w-10 h-10 bg-[#4A2C2A] rounded-full flex items-center justify-center hover:bg-[#D4A76A] transition-colors" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <p>© 2025 YAMBO'S JUNGLE. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
 
     <script src="javascript.js"> </script> <!-- JavaScript-->
 
